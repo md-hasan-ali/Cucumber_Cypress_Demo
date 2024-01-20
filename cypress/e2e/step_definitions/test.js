@@ -1,5 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+const locators = require("../locators/locators")
+
 
 Given("I go to google", function () {
-    cy.visit('http://www.google.com')
-  });
+  cy.visit(locators.web_url)
+});
