@@ -17,3 +17,18 @@ Then("Enter your password {string}", (password) => {
 Then("Click on the submit button", () => {
   homePage.submitBtn()
 })
+
+// Log In
+
+Then("Click on the login button", () => {
+  homePage.loginBtn()
+})
+Then("Enter your login user name {string}", (username) => {
+  homePage.loginUserName(username)
+})
+Then("Enter your login password {string}", (password) => {
+  homePage.loginPassword(password)
+})
+Then("Click on the submit login", () => {
+  homePage.loginSubmitBtn()
+})
